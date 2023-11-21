@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Peticiones</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h2>Almacenamiento Local y de Sesión</h2>
+        <label for="mensaje">Ingrese un mensaje:</label>
+        <input type="text" id="mensaje" placeholder="Escriba su mensaje...">
+        <button onclick="guardarMensaje()">Guardar</button>
+        <div>
+            <p>Mensaje almacenado en localStorage:</p>
+            <p id="mensajeLocalStorage"></p>
+        </div>
+        <div>
+            <p>Mensaje almacenado en sessionStorage:</p>
+            <p id="mensajeSessionStorage"></p>
+        </div>
+    </section>
+    <section>
+        <h2>Operación Asincrónica con Promesa</h2>
+        <button onclick="realizarOperacionAsincronica()">Realizar Operación Asincrónica</button>
+        <div id="resultado"></div>
+    </section>
+    <section>
+        <h2>Resultados de la API USUARIOS</h2>
+        <div id="usuarios"></div>
+        <h2>Formulario de Envío POST</h2>
+        <form id="miFormulario">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+        <div id="registrado"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
