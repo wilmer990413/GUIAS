@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Nivelacion</title>
 </head>
 <body>
-    <h1>HOLAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+    <header id="elemento-objetivo">
+        <a href="../index.html">Volver a la pagina anterior</a>
+        <h1>Bienvenido al MÓDULO SOBRE DOM E INTERACCIÓN CON EL DOM</h1>
+    </header>
+    <section class="container">
+        <button id="boton-cambiar-color">Cambiar Color de Fondo del Titulo</button>
+    </section>
+    <section class="container">
+        <h2>Lista de Elementos (Por favor Abrir la consola)</h2>
+        <ul id="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+    <section class="container">
+        <form id="miFormulario">
+            <label for="campoEntrada">Campo de Entrada:</label>
+            <input type="text" id="campoEntrada" name="campoEntrada" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="./index.js"></script>
 </body>
 </html>

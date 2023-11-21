@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.titulo {
+    margin: 0;
+}
+
+#elemento-objetivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 40px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#elemento-objetivo > a{
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    background-color: #333;
+    margin: 5px;
+    color: white;
+    border-radius: 20px;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+#boton-cambiar-color{
+    border: none;
+    background-color: rgb(158, 158, 255);
+    border-radius: 25px;
+    color: black;
+    padding: 20px;
+    font-weight: 900;
+    font-size: larger;
+}
+
+#boton-cambiar-color:hover{
+    background-color: rgb(51, 99, 153, 201);
+    color: white;
+    cursor: pointer;
+}
+
+#lista > li{
+    padding: 5px;
+}
+
+#lista:hover{
+    cursor: pointer;
+}
+
+.mensaje-error {
+    color: red;
+}
+
+#miFormulario {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#miFormulario > label {
+    font-weight: 900;
+}
