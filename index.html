@@ -1,12 +1,72 @@
+<!-- 1.	Crear un documento HTML llamado index.html que incluya encabezados, párrafos, enlaces y una lista no ordenada. Aplicar la práctica recomendada de estilo CSS para cambiar el color y la fuente de los elementos. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Ejemplo</title>
 </head>
 <body>
-    <h1>Abre la consola para ver los puntos</h1>
+    <header>
+        <h1 class="titulo">Mi Página Taller de Nivelacion</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 class="subtitulo">Bienvenido a mi página web de solucion del modulo 1 y 2</h2>
+        <p class="parrafo">Esta es una página de ejemplo que incluye varios elementos HTML y estilos CSS.</p>
+        <p class="parrafo">Puedes visitar la sección de <a href="#">Acerca de</a> para obtener más información sobre mí.</p>
+        <ul class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <p class="subtitulo negrita">Abre la consola para ver los puntos del modulo "MÓDULO SOBRE LÓGICA, LÓGICA DE PROGRAMACIÓN Y PROGRAMACIÓN CON 
+            JAVASCRIPT"</p>
+        <p class="subtitulo negrita">Si deseas ver la solucion de: "MÓDULO SOBRE DOM E INTERACCIÓN CON EL DOM" <a href="./GUIA DOM/index.html">Da click aqui...</a></p>
+    </section>
+    <!-- 2.	Diseñar una sección de la página web en index.html que contenga tres elementos (por ejemplo, tarjetas). Utilizar flexbox para alinearlos horizontalmente y distribuir el espacio de manera uniforme. -->
+    <section>
+        <h2 class="subtitulo">Sección de Tarjetas</h2>
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <h3>Tarjeta 1</h3>
+                <p>Contenido de la tarjeta 1.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Tarjeta 2</h3>
+                <p>Contenido de la tarjeta 2.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Tarjeta 3</h3>
+                <p>Contenido de la tarjeta 3.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 3.	Crear una cuadrícula de imágenes (o galería de imágenes) utilizando CSS Grid. Asegurarse de que las imágenes se ajusten automáticamente a diferentes tamaños de pantalla. -->
+    <section>
+        <h2 class="subtitulo">Galería de Imágenes</h2>
+        <div class="galeria-container">
+            <div class="imagen">
+                <img src="./GUIA HTML CSS/images/imagen1.jpg" alt="Imagen 1">
+            </div>
+            <div class="imagen">
+                <img src="./GUIA HTML CSS/images/imagen2.jpg" alt="Imagen 2">
+            </div>
+            <div class="imagen">
+                <img src="./GUIA HTML CSS/images/imagen3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="pie-pagina">© 2023 Mi Página Web</p>
+    </footer>
     <script src="./GUIA JS/index.js"></script>
 </body>
 </html>
